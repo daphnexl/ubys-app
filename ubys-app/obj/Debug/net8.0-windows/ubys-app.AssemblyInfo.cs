@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ubys-app")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0a6346e0004bc2e99422324767089f74bc0d2dd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fdf47ad19151d5d2ab42ffa36e4a8590e1933c72")]
 [assembly: System.Reflection.AssemblyProductAttribute("ubys-app")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ubys-app")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
