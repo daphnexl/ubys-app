@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using ubys_app.MVVM.ViewModel;
 
 namespace ubys_app.MVVM.View
 {
@@ -9,7 +10,7 @@ namespace ubys_app.MVVM.View
         public LoginPageView()
         {
             InitializeComponent();
-            this.DataContext = new LoginPageViewModel(); 
+            this.DataContext = new LoginPageView(); 
         }
         private void UsernameTextBox_GotFocus(object sender, RoutedEventArgs e)
         {
