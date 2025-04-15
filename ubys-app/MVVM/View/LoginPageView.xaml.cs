@@ -1,7 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using ubys_app.MVVM.ViewModel;
 
 namespace ubys_app.MVVM.View
 {
