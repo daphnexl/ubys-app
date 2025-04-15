@@ -53,7 +53,7 @@ namespace ubys_app.Components {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ubys-app;component/components/navigationbarteacher.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ubys-app;V1.0.0.0;component/components/navigationbarteacher.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Components\NavigationBarTeacher.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
