@@ -24,40 +24,5 @@ namespace ubys_app.MVVM.View
         {
             InitializeComponent();
         }
-    private void UsernameTextBox_GotFocus(object sender, RoutedEventArgs e)
-        {
-            if (UsernameTextBox.Text == "username")
-            {
-                UsernameTextBox.Text = "";
-                UsernameTextBox.Foreground = Brushes.Black;
-            }
-        }
-        private void UsernameTextBox_LostFocus(object sender, RoutedEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(UsernameTextBox.Text))
-            {
-                UsernameTextBox.Text = "username";
-                UsernameTextBox.Foreground = Brushes.Gray;
-            }
-        }
-        private void PasswordBox_GotFocus(object sender, RoutedEventArgs e)
-        {
-            PasswordPlaceholder.Visibility = Visibility.Collapsed;
-        }
-
-        private void PasswordBox_LostFocus(object sender, RoutedEventArgs e)
-        {
-            if (string.IsNullOrEmpty(PasswordBox.Password))
-            {
-                PasswordPlaceholder.Visibility = Visibility.Visible;
-            }
-        }
-
-        private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
-        {
-            PasswordPlaceholder.Visibility = string.IsNullOrEmpty(PasswordBox.Password)
-                ? Visibility.Visible
-                : Visibility.Collapsed;
-        }
     }
 }
