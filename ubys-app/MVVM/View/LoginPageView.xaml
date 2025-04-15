@@ -128,6 +128,7 @@
         <!-- Giriş Butonu -->
         <Button Content="Log in"
                 Command="{Binding LoginCommand}"
+                CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=UserControl}}"
                 Width="380"
                 Height="55"
                 Margin="0,735,0,0"

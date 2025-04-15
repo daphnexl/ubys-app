@@ -1,37 +1,47 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
+﻿using System.Windows.Input;
 using System.Windows;
-using System.Windows.Input;
+using CommunityToolkit.Mvvm.Input;
+using ubys_app.MVVM.View;
 
-namespace ubys_app.MVVM.ViewModel
+namespace ubys_app.MVVM.ViewModels
 {
-    public partial class LoginPageViewModel : ObservableObject
+    public class LoginPageViewModel
     {
-        [ObservableProperty]
-        private string username;
+        public ICommand LoginCommand { get; set; }
+        public ICommand ForgotPasswordCommand { get; set; }
 
-        [ObservableProperty]
-        private string password;
-
-        [RelayCommand]
-        private void Login()
+        public LoginPageViewModel()
         {
-            // Basit giriş kontrolü – örnek amaçlı
-            if (Username == "admin" && Password == "1234")
+            LoginCommand = new RelayCommand(ExecuteLoginCommand);
+            ForgotPasswordCommand = new RelayCommand(ExecuteForgotPasswordCommand);
+        }
+        private void ExecuteLoginCommand(object parameter)
+        {
+            // parameter olarak UserControl (LoginPageView) nesnesi alıyoruz
+            var loginPageView = parameter as LoginPageView;
+
+            if (loginPageView == null)
             {
-                MessageBox.Show("Login successful!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-                // Rolüne göre yönlendirme burada yapılabilir.
+                MessageBox.Show("Geçersiz parametre!");
+                return;
+            }
+
+            string username = loginPageView.UsernameTextBox.Text;
+            string password = loginPageView.PasswordBox.Password;
+
+            // Kullanıcı adı ve şifre kontrolü
+            if (username == "admin" && password == "password123")
+            {
+                MessageBox.Show("Giriş Başarılı!");
             }
             else
             {
-                MessageBox.Show("Invalid credentials.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Kullanıcı adı veya şifre hatalı.");
             }
         }
-
-        [RelayCommand]
-        private void ForgotPassword()
+        private void ExecuteForgotPasswordCommand(object parameter)
         {
-            MessageBox.Show("Redirecting to password recovery...", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show("Şifre sıfırlama linki gönderildi.");
         }
     }
 }
