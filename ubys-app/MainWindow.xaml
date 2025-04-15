@@ -8,12 +8,12 @@
         Title="MainWindow"
         Height="1080"
         Width="1920"
-        Background="Transparent">
+        Background="#2C0A57">
 
-    <!-- LoginPageView'i gösteren sadece bir UserControl yerleştiriyoruz -->
+    <!-- Arka plan olarak yalnızca bir renk kullanıyoruz -->
     <Grid>
+        <!-- Burada LoginPageView'i ekliyoruz -->
         <local:LoginPageView HorizontalAlignment="Stretch"
                              VerticalAlignment="Stretch" />
     </Grid>
-
 </Window>
