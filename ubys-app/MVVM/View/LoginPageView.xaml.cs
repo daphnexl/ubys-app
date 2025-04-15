@@ -2,6 +2,7 @@
 using System.Windows.Controls;
 using System.Windows.Media;
 using ubys_app.MVVM.ViewModel;
+using ubys_app.MVVM.ViewModels;
 
 namespace ubys_app.MVVM.View
 {
@@ -10,8 +11,9 @@ namespace ubys_app.MVVM.View
         public LoginPageView()
         {
             InitializeComponent();
-            this.DataContext = new LoginPageView(); 
+            this.DataContext = new LoginPageViewModel();  // ViewModel'i doğru şekilde bağlama
         }
+
         private void UsernameTextBox_GotFocus(object sender, RoutedEventArgs e)
         {
             if (UsernameTextBox.Text == "username")
@@ -20,6 +22,7 @@ namespace ubys_app.MVVM.View
                 UsernameTextBox.Foreground = new SolidColorBrush(System.Windows.Media.Colors.Black);
             }
         }
+
         private void UsernameTextBox_LostFocus(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrEmpty(UsernameTextBox.Text))
@@ -28,6 +31,7 @@ namespace ubys_app.MVVM.View
                 UsernameTextBox.Foreground = new SolidColorBrush(System.Windows.Media.Colors.Gray);
             }
         }
+
         private void PasswordBox_GotFocus(object sender, RoutedEventArgs e)
         {
             if (PasswordPlaceholder.Visibility == Visibility.Visible)
@@ -35,6 +39,7 @@ namespace ubys_app.MVVM.View
                 PasswordPlaceholder.Visibility = Visibility.Hidden;
             }
         }
+
         private void PasswordBox_LostFocus(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrEmpty(PasswordBox.Password))
@@ -42,9 +47,9 @@ namespace ubys_app.MVVM.View
                 PasswordPlaceholder.Visibility = Visibility.Visible;
             }
         }
+
         private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
         {
         }
     }
 }
-

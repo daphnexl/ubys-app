@@ -77,7 +77,7 @@ namespace ubys_app.MVVM.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ubys-app;V1.0.0.0;component/mvvm/view/loginpageview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ubys-app;component/mvvm/view/loginpageview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\MVVM\View\LoginPageView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
