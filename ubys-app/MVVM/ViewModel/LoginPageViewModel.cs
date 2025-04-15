@@ -17,7 +17,6 @@ namespace ubys_app.MVVM.ViewModels
         }
         private void ExecuteLoginCommand(object parameter)
         {
-            // parameter olarak UserControl (LoginPageView) nesnesi alıyoruz
             var loginPageView = parameter as LoginPageView;
 
             if (loginPageView == null)
@@ -29,7 +28,6 @@ namespace ubys_app.MVVM.ViewModels
             string username = loginPageView.UsernameTextBox.Text;
             string password = loginPageView.PasswordBox.Password;
 
-            // Kullanıcı adı ve şifre kontrolü
             if (username == "admin" && password == "password123")
             {
                 MessageBox.Show("Giriş Başarılı!");

@@ -10,7 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\" />
     <Folder Include="MVVM\Model\" />
     <Folder Include="Stores\" />
     <Folder Include="Services\" />

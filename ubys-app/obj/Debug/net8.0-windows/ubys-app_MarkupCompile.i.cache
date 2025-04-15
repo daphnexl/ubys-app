@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\App.xaml
 6-956248286
 
-141861639236
+151168289144
 199-1413503067
 Components\NavigationBar.xaml;Components\NavigationBarAdmin.xaml;Components\NavigationBarStudent.xaml;Components\NavigationBarTeacher.xaml;MainWindow.xaml;MVVM\View\LoginPageView.xaml;
 
-True
+False
 
