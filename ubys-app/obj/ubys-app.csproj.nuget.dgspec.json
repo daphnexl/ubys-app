@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Defne\\Desktop\\Ubys Project\\ubys-app\\ubys-app\\ubys-app.csproj": {}
+    "C:\\Users\\User\\OneDrive\\Belgeler\\GitHub\\ubys-app\\ubys-app\\ubys-app.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Defne\\Desktop\\Ubys Project\\ubys-app\\ubys-app\\ubys-app.csproj": {
+    "C:\\Users\\User\\OneDrive\\Belgeler\\GitHub\\ubys-app\\ubys-app\\ubys-app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Defne\\Desktop\\Ubys Project\\ubys-app\\ubys-app\\ubys-app.csproj",
+        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Belgeler\\GitHub\\ubys-app\\ubys-app\\ubys-app.csproj",
         "projectName": "ubys-app",
-        "projectPath": "C:\\Users\\Defne\\Desktop\\Ubys Project\\ubys-app\\ubys-app\\ubys-app.csproj",
-        "packagesPath": "C:\\Users\\Defne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Defne\\Desktop\\Ubys Project\\ubys-app\\ubys-app\\obj\\",
+        "projectPath": "C:\\Users\\User\\OneDrive\\Belgeler\\GitHub\\ubys-app\\ubys-app\\ubys-app.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\OneDrive\\Belgeler\\GitHub\\ubys-app\\ubys-app\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Defne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +28,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,6 +52,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
