@@ -1,0 +1,20 @@
+﻿ubys-app
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows10.0.26100.0\
+ubys_app
+none
+false
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\App.xaml
+6-956248286
+
+19932276120
+201-587102797
+Components\NavigationBar.xaml;Components\NavigationBarAdmin.xaml;Components\NavigationBarStudent.xaml;Components\NavigationBarTeacher.xaml;MainWindow.xaml;MVVM\View\LoginPageView.xaml;
+
+False
+

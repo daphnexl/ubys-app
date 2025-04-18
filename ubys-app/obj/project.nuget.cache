@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "qB/Xih4dP3E=",
+  "dgSpecHash": "du6/f+AaY6w=",
   "success": true,
   "projectFilePath": "C:\\Users\\Defne\\Desktop\\Ubys Project\\ubys-app\\ubys-app\\ubys-app.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Defne\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512"
+    "C:\\Users\\Defne\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512",
+    "C:\\Users\\Defne\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.26100.54\\microsoft.windows.sdk.net.ref.10.0.26100.54.nupkg.sha512"
   ],
   "logs": []
 }

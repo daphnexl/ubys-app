@@ -6,6 +6,8 @@
         xmlns:local="clr-namespace:ubys_app.MVVM.View"
         mc:Ignorable="d"
         Title="MainWindow"
+        WindowStyle="None"
+        WindowState="Maximized"
         Height="1080"
         Width="1920"
         Background="#2C0A57">
@@ -14,6 +16,6 @@
     <Grid>
         <!-- Burada LoginPageView'i ekliyoruz -->
         <local:LoginPageView HorizontalAlignment="Stretch"
-                             VerticalAlignment="Stretch" />
+                             VerticalAlignment="Stretch"/>
     </Grid>
 </Window>
