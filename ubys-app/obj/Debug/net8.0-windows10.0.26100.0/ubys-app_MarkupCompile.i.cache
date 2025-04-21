@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\App.xaml
-6-956248286
+11-1428323309
 
-19932276120
-201-587102797
-Components\NavigationBar.xaml;Components\NavigationBarAdmin.xaml;Components\NavigationBarStudent.xaml;Components\NavigationBarTeacher.xaml;MainWindow.xaml;MVVM\View\LoginPageView.xaml;
+20747127603
+2041850525123
+Components\NavigationBar.xaml;Components\NavigationBarAdmin.xaml;Components\NavigationBarStudent.xaml;Components\NavigationBarTeacher.xaml;Cores\DataTemplate.xaml;MainWindow.xaml;MVVM\View\LoginPageView.xaml;Styles\Button.xaml;Styles\PasswordBox.xaml;Styles\TextBox.xaml;Styles\ToggleButton.xaml;
 
-False
+True
 

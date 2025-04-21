@@ -16,6 +16,8 @@
     <Grid>
         <!-- Burada LoginPageView'i ekliyoruz -->
         <local:LoginPageView HorizontalAlignment="Stretch"
-                             VerticalAlignment="Stretch"/>
+                             VerticalAlignment="Stretch" />
     </Grid>
+    
+
 </Window>

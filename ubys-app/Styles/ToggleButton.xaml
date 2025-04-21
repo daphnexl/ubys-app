@@ -1,0 +1,100 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!-- Color Settings for ToggleButton -->
+    <SolidColorBrush x:Key="ToggleButtonBackground"
+                     Color="#404348" />
+    <SolidColorBrush x:Key="ToggleButtonHoverBackground"
+                     Color="#2D2F33" />
+    <SolidColorBrush x:Key="ToggleButtonCheckedBackground"
+                     Color="#2D2F33" />
+    <SolidColorBrush x:Key="ToggleButtonIsCheckedBorderBrush"
+                     Color="#404348" />
+    <SolidColorBrush x:Key="ToggleButtonBorderBrush"
+                     Color="#2D2F33" />
+    <SolidColorBrush x:Key="ToggleButtonBorder"
+                     Color="Transparent" />
+    <SolidColorBrush x:Key="ToggleButtonTextForeground"
+                     Color="#DBDBDB" />
+    <SolidColorBrush x:Key="ToggleButtonDisabledBackground"
+                     Color="#383B3F" />
+    <SolidColorBrush x:Key="ToggleButtonDisabledForeground"
+                     Color="DarkSlateGray" />
+
+    <!-- Thickness Settings -->
+    <Thickness x:Key="ToggleButtonThickness">2</Thickness>
+    <!-- Radius Settings -->
+    <CornerRadius x:Key="ToggleButtonBorderRadius">4</CornerRadius>
+
+    <sys:Double x:Key="ToggleButtonFontSize">10</sys:Double>
+    <FontFamily x:Key="ToggleButtonFontFamily">Arial</FontFamily>
+
+    <!-- Font Settings for ToggleButton -->
+    <DataTemplate x:Key="ToggleButtonTextStyle">
+        <TextBlock x:Name="ToggleButtonTextBlock"
+                   FontFamily="{StaticResource ToggleButtonFontFamily}"
+                   FontSize="{StaticResource ToggleButtonFontSize}"
+                   Foreground="{StaticResource ToggleButtonTextForeground}"
+                   Text="{Binding}" />
+    </DataTemplate>
+
+    <!-- ToggleButton Style Template -->
+    <Style x:Key="ToggleButtonStyle"
+           TargetType="ToggleButton">
+        <Setter Property="Background"
+                Value="{StaticResource ToggleButtonBackground}" />
+        <Setter Property="Cursor"
+                Value="Hand" />
+        <Setter Property="Foreground"
+                Value="{StaticResource ToggleButtonTextForeground}" />
+        <Setter Property="BorderBrush"
+                Value="{StaticResource ToggleButtonBorder}" />
+        <Setter Property="BorderThickness"
+                Value="{StaticResource ToggleButtonThickness}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ToggleButton">
+                    <Border x:Name="border"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{StaticResource ToggleButtonBorderBrush}"
+                            BorderThickness="{StaticResource ToggleButtonThickness}"
+                            CornerRadius="{StaticResource ToggleButtonBorderRadius}">
+                        <ContentPresenter x:Name="contentPresenter"
+                                          HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"
+                                          ContentTemplate="{StaticResource ToggleButtonTextStyle}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <!-- Checked State -->
+                        <Trigger Property="IsChecked"
+                                 Value="True">
+                            <Setter TargetName="border"
+                                    Property="Background"
+                                    Value="{StaticResource ToggleButtonCheckedBackground}" />
+                            <Setter TargetName="border"
+                                    Property="BorderBrush"
+                                    Value="{StaticResource ToggleButtonIsCheckedBorderBrush}" />
+                        </Trigger>
+                        <!-- Disabled State -->
+                        <Trigger Property="IsEnabled"
+                                 Value="False">
+                            <Setter TargetName="border"
+                                    Property="Background"
+                                    Value="{StaticResource ToggleButtonDisabledBackground}" />
+                            <Setter TargetName="border"
+                                    Property="BorderThickness"
+                                    Value="0" />
+                            <Setter TargetName="border"
+                                    Property="BorderBrush"
+                                    Value="{StaticResource ToggleButtonIsCheckedBorderBrush}" />
+                            <Setter TargetName="contentPresenter"
+                                    Property="TextBlock.Foreground"
+                                    Value="{StaticResource ToggleButtonDisabledForeground}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

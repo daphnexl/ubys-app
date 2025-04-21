@@ -36,10 +36,25 @@
     <Page Update="Components\NavigationBarTeacher.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Cores\DataTemplate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\LoginPageView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Button.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\PasswordBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\TextBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\ToggleButton.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -1,5 +1,6 @@
 ﻿using System.Windows.Controls;
 using ubys_app.MVVM.ViewModels;
+using System;
 
 namespace ubys_app.MVVM.View
 {
@@ -8,7 +9,7 @@ namespace ubys_app.MVVM.View
         public LoginPageView()
         {
             InitializeComponent();
-            this.DataContext = new LoginPageViewModel(); // ViewModel bağlandı
+            this.DataContext = new LoginPageViewModel();
         }
     }
 }
