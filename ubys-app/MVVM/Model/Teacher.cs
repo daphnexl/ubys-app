@@ -8,11 +8,14 @@ using System.Threading.Tasks;
 
 namespace ubys_app.MVVM.Model
 {
-    public class Admins
+    public class Teacher
     {
         [Key]
         [ForeignKey(nameof(User))]
-        public int Admin_id { get; set; }
+        public int Teacher_id { get; set; }
+
+        [Required]
+        public string Department { get; set; }
 
         public User User { get; set; }
     }

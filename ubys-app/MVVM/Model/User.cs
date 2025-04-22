@@ -40,7 +40,7 @@ namespace ubys_app.MVVM.Model
         [Required]
         public Gender Gender { get; set; }
 
-        public Roles RoleNavigation { get; set; }
+        public Role RoleNavigation { get; set; }
 
     }
     public enum Gender

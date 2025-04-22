@@ -9,22 +9,22 @@ using System.Windows.Input;
 
 namespace ubys_app.MVVM.Model
 {
-    public class Enrollments
+    public class Enrollment
     {
         [Key]
         public int Enrollment_id { get; set; }
 
-        [ForeignKey(nameof(Students))]
+        [ForeignKey(nameof(Model.Student))]
         public int Student_id { get; set; }
 
-        [ForeignKey(nameof(Courses))]
+        [ForeignKey(nameof(Model.Course))]
         public int Course_id { get; set; }
 
-        [ForeignKey(nameof(Semesters))]
+        [ForeignKey(nameof(Model.Semester))]
         public int Semester_id { get; set; }
 
-        public Students Student { get; set; }
-        public Courses Course { get; set; }
-        public Semesters Semester { get; set; }
+        public Student Student { get; set; }
+        public Course Course { get; set; }
+        public Semester Semester { get; set; }
     }
 }

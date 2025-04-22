@@ -27,3 +27,15 @@ C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows\r
 C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows\ubys-app.pdb
 C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows\ubys-app.genruntimeconfig.cache
 C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows\ref\ubys-app.dll
+C:\Users\User\OneDrive\Belgeler\GitHub\ubys-app\ubys-app\obj\Debug\net8.0-windows\ubys-app.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Belgeler\GitHub\ubys-app\ubys-app\obj\Debug\net8.0-windows\Components\NavigationBarAdmin.g.cs
+C:\Users\User\OneDrive\Belgeler\GitHub\ubys-app\ubys-app\obj\Debug\net8.0-windows\Components\NavigationBarStudent.g.cs
+C:\Users\User\OneDrive\Belgeler\GitHub\ubys-app\ubys-app\obj\Debug\net8.0-windows\Components\NavigationBarTeacher.g.cs
+C:\Users\User\OneDrive\Belgeler\GitHub\ubys-app\ubys-app\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\User\OneDrive\Belgeler\GitHub\ubys-app\ubys-app\obj\Debug\net8.0-windows\MVVM\View\LoginPageView.g.cs
+C:\Users\User\OneDrive\Belgeler\GitHub\ubys-app\ubys-app\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\User\OneDrive\Belgeler\GitHub\ubys-app\ubys-app\obj\Debug\net8.0-windows\ubys-app_MarkupCompile.cache
+C:\Users\User\OneDrive\Belgeler\GitHub\ubys-app\ubys-app\obj\Debug\net8.0-windows\ubys-app_MarkupCompile.lref
+C:\Users\User\OneDrive\Belgeler\GitHub\ubys-app\ubys-app\obj\Debug\net8.0-windows\ubys-app.dll
+C:\Users\User\OneDrive\Belgeler\GitHub\ubys-app\ubys-app\obj\Debug\net8.0-windows\refint\ubys-app.dll
+C:\Users\User\OneDrive\Belgeler\GitHub\ubys-app\ubys-app\obj\Debug\net8.0-windows\ubys-app.pdb

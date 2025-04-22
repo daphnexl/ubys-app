@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
@@ -7,13 +8,12 @@ using System.Threading.Tasks;
 
 namespace ubys_app.MVVM.Model
 {
-    public class Roles
+    public class Admin
     {
-
         [Key]
-        public int Role_id { get; set; }
+        [ForeignKey(nameof(User))]
+        public int Admin_id { get; set; }
 
-        [Required]
-        public string Role_name { get; set; }
+        public User User { get; set; }
     }
 }
