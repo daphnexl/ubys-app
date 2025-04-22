@@ -4,10 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ubys_app"
+        xmlns:view="clr-namespace:ubys_app.MVVM.View"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         Background="#2C0A57">
     <Grid>
-
+        <view:LoginPageView />
     </Grid>
 </Window>

@@ -197,6 +197,14 @@
           }
         }
       },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.135": {
+        "runtime": {
+          "lib/net6.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.135.29210"
+          }
+        }
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.1.10": {
         "dependencies": {
           "SQLitePCLRaw.lib.e_sqlite3": "2.1.10",
@@ -506,6 +514,13 @@
       "sha512": "sha512-SPFyMjyku1nqTFFJ928JAMd0QnRe4xjE7KeKnZMWXf3xk+6e0WiOZAluYtLdbJUXtsl2cCRSi8cBquJ408k8RA==",
       "path": "microsoft.extensions.primitives/9.0.4",
       "hashPath": "microsoft.extensions.primitives.9.0.4.nupkg.sha512"
+    },
+    "Microsoft.Xaml.Behaviors.Wpf/1.1.135": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-r8qBEXmQfORso2+MVHnt8PSH4761zJ0SIxgQTSEDVLU97EN2FZdG6/ZCYUPhQy+OrPKgnpYBCAs3PS6Bs7wRsg==",
+      "path": "microsoft.xaml.behaviors.wpf/1.1.135",
+      "hashPath": "microsoft.xaml.behaviors.wpf.1.1.135.nupkg.sha512"
     },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.10": {
       "type": "package",

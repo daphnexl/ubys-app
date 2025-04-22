@@ -310,6 +310,22 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.135": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.1.10": {
         "type": "package",
         "dependencies": {
@@ -985,6 +1001,28 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.Xaml.Behaviors.Wpf/1.1.135": {
+      "sha512": "r8qBEXmQfORso2+MVHnt8PSH4761zJ0SIxgQTSEDVLU97EN2FZdG6/ZCYUPhQy+OrPKgnpYBCAs3PS6Bs7wRsg==",
+      "type": "package",
+      "path": "microsoft.xaml.behaviors.wpf/1.1.135",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/Design/Microsoft.Xaml.Behaviors.Design.dll",
+        "lib/net462/Design/Microsoft.Xaml.Behaviors.DesignTools.dll",
+        "lib/net462/Microsoft.Xaml.Behaviors.dll",
+        "lib/net462/Microsoft.Xaml.Behaviors.pdb",
+        "lib/net462/Microsoft.Xaml.Behaviors.xml",
+        "lib/net6.0-windows7.0/Design/Microsoft.Xaml.Behaviors.DesignTools.dll",
+        "lib/net6.0-windows7.0/Microsoft.Xaml.Behaviors.dll",
+        "lib/net6.0-windows7.0/Microsoft.Xaml.Behaviors.pdb",
+        "lib/net6.0-windows7.0/Microsoft.Xaml.Behaviors.xml",
+        "microsoft.xaml.behaviors.wpf.1.1.135.nupkg.sha512",
+        "microsoft.xaml.behaviors.wpf.nuspec",
+        "tools/Install.ps1"
+      ]
+    },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.10": {
       "sha512": "UxWuisvZ3uVcVOLJQv7urM/JiQH+v3TmaJc1BLKl5Dxfm/nTzTUrqswCqg/INiYLi61AXnHo1M1JPmPqqLnAdg==",
       "type": "package",
@@ -1260,7 +1298,9 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "Microsoft.EntityFrameworkCore >= 9.0.4",
-      "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.4"
+      "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.4",
+      "Microsoft.Extensions.DependencyInjection >= 9.0.4",
+      "Microsoft.Xaml.Behaviors.Wpf >= 1.1.135"
     ]
   },
   "packageFolders": {
@@ -1324,6 +1364,14 @@
           "Microsoft.EntityFrameworkCore.Sqlite": {
             "target": "Package",
             "version": "[9.0.4, )"
+          },
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[9.0.4, )"
+          },
+          "Microsoft.Xaml.Behaviors.Wpf": {
+            "target": "Package",
+            "version": "[1.1.135, )"
           }
         },
         "imports": [

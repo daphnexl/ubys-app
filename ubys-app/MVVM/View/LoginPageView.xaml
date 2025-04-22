@@ -85,9 +85,7 @@
                      FontFamily="Segoe UI"
                      BorderBrush="Transparent"
                      Background="Transparent"
-                     Padding="10"
-                     GotFocus="UsernameTextBox_GotFocus"
-                     LostFocus="UsernameTextBox_LostFocus" />
+                     Padding="10"/>
         </Border>
 
         <!-- PasswordBox -->
@@ -108,10 +106,7 @@
                              FontFamily="Segoe UI"
                              BorderBrush="Transparent"
                              Background="Transparent"
-                             Padding="10"
-                             PasswordChanged="PasswordBox_PasswordChanged"
-                             GotFocus="PasswordBox_GotFocus"
-                             LostFocus="PasswordBox_LostFocus" />
+                             Padding="10"/>
                 <TextBlock x:Name="PasswordPlaceholder"
                            Text="●●●●●●"
                            FontSize="14"
