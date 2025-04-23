@@ -9,7 +9,6 @@ namespace ubys_app.MVVM.View
         public LoginPageView()
         {
             InitializeComponent();
-            this.DataContext = new LoginPageViewModel();
         }
     }
 }
