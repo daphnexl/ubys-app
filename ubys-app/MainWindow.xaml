@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ubys_app.MVVM.View"
+        xmlns:view="clr-namespace:ubys_app.MVVM.View"
         mc:Ignorable="d"
         Title="MainWindow"
         WindowStyle="None"
@@ -14,9 +15,7 @@
 
     <!-- Arka plan olarak yalnızca bir renk kullanıyoruz -->
     <Grid>
-        <!-- Burada LoginPageView'i ekliyoruz -->
-        <local:LoginPageView HorizontalAlignment="Stretch"
-                             VerticalAlignment="Stretch" />
+        <view:LoginPageView />
     </Grid>
     
 
