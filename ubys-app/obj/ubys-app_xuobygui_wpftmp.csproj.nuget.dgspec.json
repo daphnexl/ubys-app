@@ -50,13 +50,9 @@
         "net8.0-windows10.0.26100": {
           "targetAlias": "net8.0-windows10.0.26100.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[9.0.4, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[9.0.4, )"
+              "version": "[8.4.0, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
