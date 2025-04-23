@@ -7,11 +7,29 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Components\NavigationAdminBar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\NavigationStudentBar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\NavigationTeacherBar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MVVM\View\LoginPageView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Components\NavigationAdminBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\NavigationStudentBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\NavigationTeacherBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Cores\DataTemplate.xaml">
       <SubType>Designer</SubType>
     </Page>
