@@ -124,13 +124,6 @@
                              Text="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                              Visibility="{Binding IsTextBoxVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
 
-                    <!-- Hidden Password -->
-                    <PasswordBox x:Name="HiddenPasswordBox"
-                                 Style="{StaticResource PasswordBoxStyle}"
-                                 Width="226"
-                                 Height="35"
-                                 helper:PasswordBoxHelper.BoundPassword="{Binding Password, Mode=TwoWay}"
-                                 Visibility="{Binding IsPasswordBoxVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
 
                     <Label IsHitTestVisible="False"
                            Foreground="Gray"

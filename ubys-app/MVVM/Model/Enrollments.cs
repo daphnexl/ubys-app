@@ -14,17 +14,17 @@ namespace ubys_app.MVVM.Model
         [Key]
         public int Enrollment_id { get; set; }
 
-        [ForeignKey(nameof(Students))]
+        [ForeignKey(nameof(Student))]
         public int Student_id { get; set; }
 
         [ForeignKey(nameof(Course))]
         public int Course_id { get; set; }
 
-        [ForeignKey(nameof(Semesters))]
+        [ForeignKey(nameof(Semester))]
         public int Semester_id { get; set; }
 
-        public Students Student { get; set; }
+        public Student Student { get; set; }
         public Course Course { get; set; }
-        public Semesters Semester { get; set; }
+        public Semester Semester { get; set; }
     }
 }

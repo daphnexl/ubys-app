@@ -15,7 +15,6 @@
 
     <!-- Arka plan olarak yalnızca bir renk kullanıyoruz -->
     <Grid>
-        <view:LoginPageView />
     </Grid>
     
 

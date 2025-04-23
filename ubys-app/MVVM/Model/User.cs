@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
+using Microsoft.EntityFrameworkCore;
 
 namespace ubys_app.MVVM.Model
 {
@@ -26,7 +27,7 @@ namespace ubys_app.MVVM.Model
         public string? Phone { get; set; }
 
         [Required]
-        [ForeignKey(nameof(Roles))]
+        [ForeignKey(nameof(Role))]
         public int Role { get; set; }
 
         [Required]
@@ -38,7 +39,7 @@ namespace ubys_app.MVVM.Model
 
         [Required]
         public Gender Gender { get; set; }
-        public Roles RoleNavigation { get; set; }
+        public Role RoleNavigation { get; set; }
 
     }
     public enum Gender
