@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ubys_app.MVVM.Model
 {
-    public class Roles
+    public class Role
     {
 
         [Key]

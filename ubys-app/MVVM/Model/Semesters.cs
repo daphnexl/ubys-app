@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ubys_app.MVVM.Model
 {
-    public class Semesters
+    public class Semester
     {
         [Key]
         public int Semester_id { get; set; }

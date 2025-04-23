@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ubys_app.MVVM.Model
 {
-    public class Grades
+    public class Grade
     {
         [Key]
         public int Grade_id { get; set; }
@@ -21,6 +21,6 @@ namespace ubys_app.MVVM.Model
         public double? Final_grade { get; set; }
         public string? Letter_grade { get; set; }
 
-        public Enrollments Enrollment { get; set; }
+        public Enrollment Enrollment { get; set; }
     }
 }

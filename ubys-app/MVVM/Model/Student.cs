@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace ubys_app.MVVM.Model
 {
 
-    public class Students
+    public class Student
     {
         [Key]
         [ForeignKey(nameof(User))]

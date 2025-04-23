@@ -9,7 +9,7 @@ using System.Windows.Input;
 
 namespace ubys_app.MVVM.Model
 {
-    public class Enrollments
+    public class Enrollment
     {
         [Key]
         public int Enrollment_id { get; set; }
@@ -17,14 +17,14 @@ namespace ubys_app.MVVM.Model
         [ForeignKey(nameof(Students))]
         public int Student_id { get; set; }
 
-        [ForeignKey(nameof(Courses))]
+        [ForeignKey(nameof(Course))]
         public int Course_id { get; set; }
 
         [ForeignKey(nameof(Semesters))]
         public int Semester_id { get; set; }
 
         public Students Student { get; set; }
-        public Courses Course { get; set; }
+        public Course Course { get; set; }
         public Semesters Semester { get; set; }
     }
 }

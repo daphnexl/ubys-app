@@ -27,7 +27,7 @@ namespace ubys_app.MVVM.Model
 
         [Required]
         [ForeignKey(nameof(Roles))]
-        public int Roles { get; set; }
+        public int Role { get; set; }
 
         [Required]
 

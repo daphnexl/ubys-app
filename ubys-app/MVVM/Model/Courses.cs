@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ubys_app.MVVM.Model
 {
-    public class Courses
+    public class Course
     {
         [Key]
         public int Course_id { get; set; }
@@ -25,6 +25,6 @@ namespace ubys_app.MVVM.Model
 
 
         [ForeignKey("Teacher_id")]
-        public Teachers Teacher { get; set; }
+        public Teacher Teacher { get; set; }
     }
 }
