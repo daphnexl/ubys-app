@@ -36,13 +36,6 @@
                  VerticalAlignment="Top"
                  Opacity="0.5" />
         <Ellipse Fill="#40145D"
-                 Width="300"
-                 Height="300"
-                 Margin="0,0,10,0"
-                 HorizontalAlignment="Right"
-                 VerticalAlignment="Bottom"
-                 Opacity="0.5" />
-        <Ellipse Fill="#40145D"
                  Width="200"
                  Height="200"
                  Margin="0,250,0,0"
@@ -50,9 +43,9 @@
                  VerticalAlignment="Top"
                  Opacity="0.5" />
         <Ellipse Fill="#40145D"
-                 Width="96"
-                 Height="98"
-                 Margin="465,352,0,0"
+                 Width="109"
+                 Height="110"
+                 Margin="465,340,0,0"
                  HorizontalAlignment="Left"
                  VerticalAlignment="Top"
                  Opacity="0.5" />
@@ -76,7 +69,7 @@
                 Margin="0,108,0,0" />
 
         <!-- Login Panel -->
-        <StackPanel Width="290"
+        <StackPanel Width="348"
                     VerticalAlignment="Top"
                     Margin="0,219,0,0"
                     HorizontalAlignment="Center">
@@ -121,7 +114,8 @@
                              Width="226"
                              Height="35"
                              Text="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                             Visibility="{Binding IsTextBoxVisible, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                             Visibility="{Binding IsTextBoxVisible, Converter={StaticResource BooleanToVisibilityConverter}}"
+                             Margin="60,0,-60,0" />
 
 
                     <Label IsHitTestVisible="False"
@@ -129,7 +123,8 @@
                            Width="226"
                            Height="35"
                            Content="Password"
-                           VerticalContentAlignment="Center">
+                           VerticalContentAlignment="Center"
+                           Margin="66,0,-66,0">
                         <Label.Style>
                             <Style TargetType="Label">
                                 <Setter Property="Visibility"
@@ -145,16 +140,16 @@
                         </Label.Style>
                     </Label>
                 </Grid>
-
-                <!-- Toggle Show/Hide Password -->
                 <ToggleButton Content="👁"
                               Width="30"
                               Height="30"
                               Style="{StaticResource ToggleButtonStyle}"
-                              Margin="10 0 0 0"
+                              Margin="30 0 10 0"
                               IsChecked="{Binding IsTextBoxVisible, Mode=TwoWay}"
-                              HorizontalAlignment="Left"
-                              VerticalAlignment="Center" />
+                              HorizontalAlignment="Right"/>
+
+
+                <!-- Toggle Show/Hide Password -->
             </StackPanel>
 
             <!-- Login Button -->
@@ -169,10 +164,12 @@
             <!-- Forgot Password -->
             <TextBlock Text="Forgot your password?"
                        Foreground="White"
-                       FontSize="12"
+                       FontSize="11"
                        HorizontalAlignment="Right"
                        Margin="0,10,0,0"
-                       Cursor="Hand" />
+                       Cursor="Hand"
+                       Width="170"
+                       Height="15" />
         </StackPanel>
     </Grid>
 </UserControl>

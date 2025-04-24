@@ -77,3 +77,9 @@ C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows10
 C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows10.0.26100.0\ubys-app.pdb
 C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows10.0.26100.0\ubys-app.genruntimeconfig.cache
 C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows10.0.26100.0\ref\ubys-app.dll
+C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows10.0.26100.0\Components\NavigationAdminBar.g.cs
+C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows10.0.26100.0\Components\NavigationStudentBar.g.cs
+C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows10.0.26100.0\Components\NavigationTeacherBar.g.cs
+C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows10.0.26100.0\Components\NavigationAdminBar.baml
+C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows10.0.26100.0\Components\NavigationStudentBar.baml
+C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows10.0.26100.0\Components\NavigationTeacherBar.baml
