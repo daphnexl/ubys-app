@@ -83,3 +83,5 @@ C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows10
 C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows10.0.26100.0\Components\NavigationAdminBar.baml
 C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows10.0.26100.0\Components\NavigationStudentBar.baml
 C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows10.0.26100.0\Components\NavigationTeacherBar.baml
+C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows10.0.26100.0\MVVM\View\TeacherMainPage.g.cs
+C:\Users\Defne\Desktop\Ubys Project\ubys-app\ubys-app\obj\Debug\net8.0-windows10.0.26100.0\MVVM\View\TeacherMainPage.baml
