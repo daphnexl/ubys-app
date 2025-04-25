@@ -20,6 +20,7 @@ namespace ubys_app.MVVM.ViewModel
         public override void Dispose()
         {
             NavigationBarViewModel.Dispose();
+            //neden hata var
             ContentViewModel.Dispose();
 
             base.Dispose();
