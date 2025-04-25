@@ -13,3 +13,4 @@ public abstract class CommandBase : ICommand
         CanExecuteChanged?.Invoke(this, EventArgs.Empty);
     }
 }
+//deneme
