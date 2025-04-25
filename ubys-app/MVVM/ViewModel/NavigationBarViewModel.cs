@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ubys_app.MVVM.ViewModel
 {
-    class NavigationBarViewModel
+    public class NavigationBarViewModel
     {
     }
 }

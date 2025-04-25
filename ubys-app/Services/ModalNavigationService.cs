@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ubys_app.MVVM.ViewModel;
 using ubys_app.Stores;
 
 namespace ubys_app.Services
 {
     public class ModalNavigationService<TViewModel> : INavigationService
-       where TViewModel : ViewModelBase
+        where TViewModel : ViewModelBase
     {
         private readonly ModalNavigationStore _navigationStore;
         private readonly Func<TViewModel> _createViewModel;

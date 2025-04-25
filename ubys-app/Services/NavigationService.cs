@@ -25,4 +25,3 @@ namespace ubys_app.Services
         }
     }
 }
-}

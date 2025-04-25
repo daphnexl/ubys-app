@@ -1,31 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Navigation;
 using ubys_app.MVVM.ViewModel;
 
 namespace ubys_app.Stores
 {
     public class ModalNavigationStore
     {
-        public class ModalNavigationService<TViewModel> : INavigationService
-        where TViewModel : ViewModelBase
+        private ViewModelBase _currentViewModel;
+        public ViewModelBase CurrentViewModel
         {
-            private readonly ModalNavigationStore _navigationStore;
-            private readonly Func<TViewModel> _createViewModel;
-
-            public ModalNavigationService(ModalNavigationStore navigationStore, Func<TViewModel> createViewModel)
+            get => _currentViewModel;
+            set
             {
-                _navigationStore = navigationStore;
-                _createViewModel = createViewModel;
+                _currentViewModel = value;
+                CurrentViewModelChanged?.Invoke();
             }
+        }
 
-            public void Navigate()
-            {
-                _navigationStore.CurrentViewModel = _createViewModel();
-            }
+        public event Action CurrentViewModelChanged;
+
+        public bool IsOpen => CurrentViewModel != null;
+
+        public void Close()
+        {
+            CurrentViewModel = null;
         }
     }
 }

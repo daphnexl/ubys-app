@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:viewmodels="clr-namespace:ubys_app.MVVM.Model"
+        xmlns:viewmodels="clr-namespace:ubys_app.MVVM.ViewModel"
         xmlns:views="clr-namespace:ubys_app.MVVM.View"
         xmlns:custom="clr-namespace:ubys_app.CustomControls"
         mc:Ignorable="d"
@@ -20,7 +20,6 @@
                 <views:LoginPageView />
             </DataTemplate>
         </Grid.Resources>
-
 
         <ContentControl Content="{Binding CurrentViewModel}" />
     </Grid>
