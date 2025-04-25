@@ -16,15 +16,5 @@ namespace ubys_app.MVVM.ViewModel
             NavigationBarViewModel = navigationBarViewModel;
             ContentViewModel = contentViewModel;
         }
-
-        public override void Dispose()
-        {
-            NavigationBarViewModel.Dispose();
-            //neden hata var
-            //düzelt
-            ContentViewModel.Dispose();
-
-            base.Dispose();
-        }
     }
 }

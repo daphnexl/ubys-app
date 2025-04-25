@@ -5,7 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:viewmodels="clr-namespace:ubys_app.MVVM.ViewModel"
         xmlns:views="clr-namespace:ubys_app.MVVM.View"
-        xmlns:custom="clr-namespace:ubys_app.CustomControls"
         mc:Ignorable="d"
         Title="MainWindow"
         WindowStyle="None"
@@ -16,11 +15,9 @@
 
     <Grid>
         <Grid.Resources>
-            <DataTemplate DataType="{x:Type viewmodels:LoginPageViewModel}">
+            <DataTemplate DataType="{x:Type viewmodels:LayoutViewModel}">
                 <views:LoginPageView />
             </DataTemplate>
         </Grid.Resources>
-
-        <ContentControl Content="{Binding CurrentViewModel}" />
     </Grid>
 </Window>
