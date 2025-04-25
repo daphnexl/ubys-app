@@ -6,8 +6,8 @@
              xmlns:helper="clr-namespace:ubys_app.Helpers"
              xmlns:converters="clr-namespace:ubys_app.Converters"
              mc:Ignorable="d"
-             d:DesignHeight="450"
-             d:DesignWidth="800"
+             d:DesignHeight="1080"
+             d:DesignWidth="1920"
              Background="#2C0A57">
 
     <UserControl.Resources>
@@ -17,28 +17,39 @@
     <Grid>
         <!-- Background Circles (Optional Decorative Elements) -->
         <Ellipse Fill="#40145D"
-                 Width="245"
-                 Height="245"
+                 Width="610"
+                 Height="610"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 Opacity="0.5"
+                 RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform Angle="0" />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <Ellipse Fill="#40145D"
+                 Width="398"
+                 Height="401"
+                 Margin="388,395,0,0"
                  HorizontalAlignment="Left"
                  VerticalAlignment="Top"
                  Opacity="0.5" />
         <Ellipse Fill="#40145D"
-                 Width="158"
-                 Height="159"
-                 Margin="139,172,0,0"
-                 HorizontalAlignment="Left"
-                 VerticalAlignment="Top"
-                 Opacity="0.5" />
-        <Ellipse Fill="#40145D"
-                 Width="205"
-                 Height="205"
+                 Width="579"
+                 Height="579"
                  HorizontalAlignment="Right"
                  VerticalAlignment="Top"
-                 Opacity="0.5" />
+                 Opacity="0.5"
+                 Margin="0,340,10,0" />
         <Ellipse Fill="#40145D"
-                 Width="200"
-                 Height="200"
-                 Margin="0,250,0,0"
+                 Width="520"
+                 Height="520"
+                 Margin="-5,560,0,0"
                  HorizontalAlignment="Left"
                  VerticalAlignment="Top"
                  Opacity="0.5" />
@@ -52,7 +63,7 @@
 
         <!-- Title -->
         <TextBlock Text="UNIVERSITY INFORMATION MANAGEMENT SYSTEM"
-                   FontSize="20"
+                   FontSize="60"
                    Foreground="White"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Top"
@@ -61,32 +72,32 @@
                    TextAlignment="Center" />
 
         <!-- Profile Placeholder -->
-        <Border Width="90"
-                Height="90"
+        <Border Width="230"
+                Height="230"
                 Background="LightGray"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
-                Margin="0,108,0,0" />
+                Margin="0,280,0,0" />
 
         <!-- Login Panel -->
         <StackPanel Width="348"
                     VerticalAlignment="Top"
-                    Margin="0,219,0,0"
+                    Margin="0,204,0,0"
                     HorizontalAlignment="Center">
 
             <!-- Username Field -->
             <Grid>
                 <TextBox x:Name="UserNameTextBox"
-                         Width="226"
-                         Height="35"
                          Style="{StaticResource TextBoxStyle}"
-                         Text="{Binding UserName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                         Text="{Binding UserName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                         Margin="1,466,1,-473" />
                 <Label IsHitTestVisible="False"
                        Foreground="Gray"
                        Width="226"
                        Height="35"
                        Content="Username"
-                       VerticalContentAlignment="Center">
+                       VerticalContentAlignment="Center"
+                       Margin="1,473,121,-473">
                     <Label.Style>
                         <Style TargetType="Label">
                             <Setter Property="Visibility"
@@ -111,11 +122,9 @@
                     <!-- Visible Password -->
                     <TextBox x:Name="VisiblePasswordBox"
                              Style="{StaticResource TextBoxStyle}"
-                             Width="226"
-                             Height="35"
                              Text="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                              Visibility="{Binding IsTextBoxVisible, Converter={StaticResource BooleanToVisibilityConverter}}"
-                             Margin="60,0,-60,0" />
+                             Margin="2,352,-122,-357" />
 
 
                     <Label IsHitTestVisible="False"
@@ -124,7 +133,7 @@
                            Height="35"
                            Content="Password"
                            VerticalContentAlignment="Center"
-                           Margin="66,0,-66,0">
+                           Margin="2,355,-2,-354">
                         <Label.Style>
                             <Style TargetType="Label">
                                 <Setter Property="Visibility"
@@ -146,7 +155,7 @@
                               Style="{StaticResource ToggleButtonStyle}"
                               Margin="30 0 10 0"
                               IsChecked="{Binding IsTextBoxVisible, Mode=TwoWay}"
-                              HorizontalAlignment="Right"/>
+                              HorizontalAlignment="Right" />
 
 
                 <!-- Toggle Show/Hide Password -->
@@ -156,26 +165,20 @@
             <Button Style="{StaticResource MainButton}"
                     Command="{Binding LoginCommand}"
                     HorizontalAlignment="Center"
-                    Margin="0 20 0 0"
+                    Margin="0 480 0 0"
                     Content="Login"
-                    Height="30"
-                    Width="226" />
-            <TextBlock Height="25"
-                       Width="171"
+                    Height="50"
+                    Width="400"
+                    Click="Button_Click" />
+            <TextBlock Height="95"
+                       Width="233"
                        Text="Forgot your password?"
                        HorizontalAlignment="Right"
-                       FontSize="11"
+                       FontSize="23"
                        Foreground="White"
                        Cursor="Hand" />
 
             <!-- Forgot Password -->
-            <TextBlock Text="Forgot your password?"
-                       Foreground="White"
-                       FontSize="11"
-                       HorizontalAlignment="Right"
-                       Cursor="Hand"
-                       Width="181"
-                       Height="25" />
         </StackPanel>
     </Grid>
 </UserControl>

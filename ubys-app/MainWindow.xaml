@@ -15,9 +15,13 @@
 
     <Grid>
         <Grid.Resources>
-            <DataTemplate DataType="{x:Type viewmodels:LayoutViewModel}">
+            <!-- Doğru DataType kullanımı -->
+            <DataTemplate DataType="{x:Type viewmodels:LoginPageViewModel}">
                 <views:LoginPageView />
             </DataTemplate>
         </Grid.Resources>
+
+        <!-- CurrentViewModel'i bağlayın -->
+        <ContentControl Content="{Binding CurrentViewModel}" />
     </Grid>
 </Window>

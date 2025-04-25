@@ -8,6 +8,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ubys_app.MVVM.ViewModel;
+using ubys_app.Stores;
 
 namespace ubys_app
 {
@@ -19,6 +21,7 @@ namespace ubys_app
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainVM(new NavigationStore(), new ModalNavigationStore());
         }
     }
 }
