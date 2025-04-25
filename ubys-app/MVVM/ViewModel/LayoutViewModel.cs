@@ -21,6 +21,7 @@ namespace ubys_app.MVVM.ViewModel
         {
             NavigationBarViewModel.Dispose();
             //neden hata var
+            //düzelt
             ContentViewModel.Dispose();
 
             base.Dispose();
