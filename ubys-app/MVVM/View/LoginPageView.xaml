@@ -168,13 +168,13 @@
                     Margin="0 480 0 0"
                     Content="Login"
                     Height="50"
-                    Width="400"
+                    Width="342"
                     Click="Button_Click" />
             <TextBlock Height="95"
-                       Width="233"
+                       Width="206"
                        Text="Forgot your password?"
                        HorizontalAlignment="Right"
-                       FontSize="23"
+                       FontSize="20"
                        Foreground="White"
                        Cursor="Hand" />
 
