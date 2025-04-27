@@ -5,11 +5,11 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Cores/DataTemplate.xaml" />
-                <ResourceDictionary Source="Styles/TextBox.xaml" />
-                <ResourceDictionary Source="Styles/PasswordBox.xaml" />
-                <ResourceDictionary Source="Styles/ToggleButton.xaml" />
-                <ResourceDictionary Source="Styles/Button.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Cores/DataTemplate.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Styles/TextBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Styles/PasswordBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Styles/ToggleButton.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Styles/Button.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
