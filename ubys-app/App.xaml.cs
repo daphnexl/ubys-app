@@ -47,6 +47,17 @@ namespace ubys_app
             //var mainWindow = serviceProvider.GetRequiredService<MainWindow>();
             //mainWindow.Show();
             //base.OnStartup(e);
+
+            var mainWindow = new MainWindow();
+
+            // LoginPageView oluştur ve Grid içine ekle
+            var loginPage = new MVVM.View.LoginPageView();
+            mainWindow.MainContentArea.Children.Clear();
+            mainWindow.MainContentArea.Children.Add(loginPage);
+
+            mainWindow.Show();
+
+            base.OnStartup(e);
         }
         private void EnsureDataBaseCreated()
         {

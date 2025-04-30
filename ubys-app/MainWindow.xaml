@@ -14,7 +14,7 @@
         Width="1920"
         Background="#2C0A57">
     
-    <Grid>
-        <views:LoginPageView />
+    <Grid x:Name="MainContentArea">
+      
     </Grid>
 </Window>
