@@ -2,11 +2,6 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:vm="clr-namespace:ubys_app.MVVM.ViewModels"
                     xmlns:view="clr-namespace:ubys_app.MVVM.View">
-
-    <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="pack://application:,,,/ubys_app;component/Styles/GlobalStyles.xaml" />
-    </ResourceDictionary.MergedDictionaries>
-
     <DataTemplate DataType="{x:Type vm:LoginPageViewModel}">
         <view:LoginPageView />
     </DataTemplate>

@@ -35,7 +35,7 @@ namespace ubys_app
 
             services.AddSingleton<MainWindow>(s => new MainWindow()
             {
-                DataContext = s.GetRequiredService<MainWindow>()
+                DataContext = s.GetRequiredService<MainVM>()
             });
             serviceProvider = services.BuildServiceProvider();
             EnsureDataBaseCreated();
@@ -44,9 +44,9 @@ namespace ubys_app
         }
         protected override void OnStartup(StartupEventArgs e)
         {
-            var mainWindow = serviceProvider.GetRequiredService<MainWindow>();
-            mainWindow.Show();
-            base.OnStartup(e);
+            //var mainWindow = serviceProvider.GetRequiredService<MainWindow>();
+            //mainWindow.Show();
+            //base.OnStartup(e);
         }
         private void EnsureDataBaseCreated()
         {
