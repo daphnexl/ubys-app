@@ -37,27 +37,29 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <!-- Hamburger Toggle Button -->
-            <Button Width="50"
-                    Height="50"
+            <!-- Hamburger Toggle Button (Bigger, Positioned on Right) -->
+            <Button Width="80"
+                    Height="80"
                     Background="Transparent"
                     BorderThickness="0"
                     Click="Hamburger_Click"
-                    Margin="10">
-                <Canvas Width="20"
-                        Height="20">
-                    <Rectangle Width="20"
-                               Height="2"
+                    Margin="10"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top">
+                <Canvas Width="40"
+                        Height="40">
+                    <Rectangle Width="40"
+                               Height="4"
                                Fill="Black"
                                Canvas.Top="0" />
-                    <Rectangle Width="20"
-                               Height="2"
-                               Fill="Black"
-                               Canvas.Top="6" />
-                    <Rectangle Width="20"
-                               Height="2"
+                    <Rectangle Width="40"
+                               Height="4"
                                Fill="Black"
                                Canvas.Top="12" />
+                    <Rectangle Width="40"
+                               Height="4"
+                               Fill="Black"
+                               Canvas.Top="24" />
                 </Canvas>
             </Button>
 
