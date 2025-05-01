@@ -19,7 +19,13 @@
     <Compile Update="Components\NavigationTeacherBar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MVVM\View\AdminMainPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MVVM\View\LoginPageView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MVVM\View\StudentMainPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MVVM\View\TeacherMainPage.xaml.cs">
@@ -45,7 +51,13 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="MVVM\View\AdminMainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MVVM\View\LoginPageView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\StudentMainPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\TeacherMainPage.xaml">

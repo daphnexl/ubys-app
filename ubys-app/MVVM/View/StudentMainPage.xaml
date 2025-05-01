@@ -1,12 +1,11 @@
-﻿<UserControl x:Class="ubys_app.MVVM.View.TeacherMainPage"
+﻿<UserControl x:Class="ubys_app.MVVM.View.StudentMainPage"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ubys_app.MVVM.View"
-             mc:Ignorable="d"
-             d:DesignHeight="1080"
-             d:DesignWidth="1920">
+             mc:Ignorable="d" 
+             d:DesignHeight="1080" d:DesignWidth="1920">
     <UserControl.Resources>
         <Style TargetType="ColumnDefinition"
                x:Key="SidebarColumnStyle">
@@ -111,7 +110,7 @@
                     <Image Width="32"
                            Height="32"
                            Source="/Assets/edit.png" />
-                    <TextBlock Text="Edit Note" />
+                    <TextBlock Text="Course Selection" />
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal"
@@ -120,7 +119,7 @@
                     <Image Width="32"
                            Height="32"
                            Source="/Assets/students.png" />
-                    <TextBlock Text="Students" />
+                    <TextBlock Text="Exam Schedule" />
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal"

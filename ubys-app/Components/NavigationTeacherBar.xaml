@@ -7,7 +7,135 @@
              mc:Ignorable="d" 
              d:DesignHeight="1080" d:DesignWidth="1920"
              Background="White">
+    <UserControl.Resources>
+        <Style TargetType="ColumnDefinition"
+               x:Key="SidebarColumnStyle">
+            <Setter Property="Width"
+                    Value="250" />
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsMenuCollapsed, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                             Value="True">
+                    <Setter Property="Width"
+                            Value="50" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+
     <Grid>
-            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="SidebarColumn"
+                              Style="{StaticResource SidebarColumnStyle}" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Sidebar -->
+        <Grid Background="White"
+              Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!-- Hamburger Toggle Button -->
+            <Button Width="50"
+                    Height="50"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    Click="Hamburger_Click"
+                    Margin="10">
+                <Canvas Width="20"
+                        Height="20">
+                    <Rectangle Width="20"
+                               Height="2"
+                               Fill="Black"
+                               Canvas.Top="0" />
+                    <Rectangle Width="20"
+                               Height="2"
+                               Fill="Black"
+                               Canvas.Top="6" />
+                    <Rectangle Width="20"
+                               Height="2"
+                               Fill="Black"
+                               Canvas.Top="12" />
+                </Canvas>
+            </Button>
+
+            <!-- Menu Items -->
+            <StackPanel Grid.Row="1"
+                        VerticalAlignment="Stretch"
+                        HorizontalAlignment="Left">
+                <StackPanel.Resources>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="FontSize"
+                                Value="27" />
+                        <Setter Property="FontWeight"
+                                Value="Bold" />
+                        <Setter Property="Margin"
+                                Value="10,0" />
+                        <Setter Property="VerticalAlignment"
+                                Value="Center" />
+                        <Setter Property="Visibility"
+                                Value="Visible" />
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsMenuCollapsed, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                         Value="True">
+                                <Setter Property="Visibility"
+                                        Value="Collapsed" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </StackPanel.Resources>
+
+                <StackPanel Orientation="Horizontal"
+                            Margin="20"
+                            Height="108">
+                    <Image Width="32"
+                           Height="32"
+                           Source="/Assets/home.png" />
+                    <TextBlock Text="Home" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal"
+                            Margin="20"
+                            Height="108">
+                    <Image Width="32"
+                           Height="32"
+                           Source="/Assets/courses.png" />
+                    <TextBlock Text="My Courses" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal"
+                            Margin="20"
+                            Height="108">
+                    <Image Width="32"
+                           Height="32"
+                           Source="/Assets/edit.png" />
+                    <TextBlock Text="Edit Note" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal"
+                            Margin="20"
+                            Height="108">
+                    <Image Width="32"
+                           Height="32"
+                           Source="/Assets/students.png" />
+                    <TextBlock Text="Students" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal"
+                            Margin="20"
+                            Height="108">
+                    <Image Width="32"
+                           Height="32"
+                           Source="/Assets/logout.png" />
+                    <TextBlock Text="Log out" />
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <!-- Main Content -->
+        <Grid Grid.Column="1"
+              Background="#321C63" />
     </Grid>
 </UserControl>
