@@ -22,6 +22,9 @@
     <Compile Update="MVVM\View\AddStudentView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MVVM\View\AddTeacherView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MVVM\View\AdminMainPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -55,6 +58,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\AddStudentView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\AddTeacherView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\AdminMainPage.xaml">
