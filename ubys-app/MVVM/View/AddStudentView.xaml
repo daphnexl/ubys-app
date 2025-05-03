@@ -177,7 +177,8 @@
                             FontSize="20"
                             FontWeight="Bold"
                             BorderThickness="0"
-                            Cursor="Hand" />
+                            Cursor="Hand"
+                            Command="{Binding SaveCommand}" />
                 </StackPanel>
             </Grid>
         </Border>
