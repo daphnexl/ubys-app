@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ubys_app.MVVM.ViewModel;
 
 namespace ubys_app.MVVM.View
 {
@@ -23,6 +24,7 @@ namespace ubys_app.MVVM.View
         public AddStudentView()
         {
             InitializeComponent();
+            this.DataContext = new AddStudentViewModel();
         }
     }
 }
