@@ -4,7 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:ubys_app.Components"
+<<<<<<< HEAD
 
+=======
+>>>>>>> bf143ba3db925443363b25564547192d3c86a079
              mc:Ignorable="d"
              d:DesignHeight="1080"
              d:DesignWidth="1920"
@@ -72,7 +75,10 @@
         </Style>
     </UserControl.Resources>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bf143ba3db925443363b25564547192d3c86a079
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition x:Name="SidebarColumn"
