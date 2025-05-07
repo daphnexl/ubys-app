@@ -1,0 +1,167 @@
+﻿<UserControl x:Class="ubys_app.MVVM.View.AddCourseView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ubys_app.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="1080" d:DesignWidth="1920">
+    <Grid Background="#2B0A59">
+        <!-- Ana Kart Panel -->
+        <Border Background="#FAF6EF"
+                CornerRadius="60"
+                Padding="60"
+                Width="1200"
+                Height="720"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <!-- Başlık -->
+                <StackPanel Grid.Row="0"
+                            Margin="0 0 0 30">
+                    <TextBlock Text="ADD NEW COURSE"
+                               FontSize="44"
+                               FontWeight="Bold"
+                               Foreground="#2B0A59"
+                               HorizontalAlignment="Center" />
+                    <TextBlock Text="Yeni bir kurs eklemek için aşağıdaki formu doldurun"
+                               FontSize="18"
+                               Foreground="Gray"
+                               HorizontalAlignment="Center"
+                               Margin="0 10 0 0" />
+                </StackPanel>
+
+                <!-- Form Alanları -->
+                <Grid Grid.Row="1"
+                      Margin="0 0 0 20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <!-- Sol Sütun -->
+                    <StackPanel Grid.Row="0"
+                                Grid.Column="0"
+                                Margin="0 10 0 0">
+                        <TextBlock Text="Course Name"
+                                   FontWeight="Bold"
+                                   FontSize="18"
+                                   Margin="0 0 0 5" 
+                                   VerticalAlignment="Center"/>
+                        <TextBox Height="50"
+                                 FontSize="16"
+                                 Background="#E2E2E2"
+                                 Padding="10,0" />
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1"
+                                Grid.Column="0"
+                                Margin="0 10 0 0">
+                        <TextBlock Text="Course Code"
+                                   FontWeight="Bold"
+                                   FontSize="18"
+                                   Margin="0 0 0 5" />
+                        <TextBox Height="50"
+                                 FontSize="16"
+                                 Background="#E2E2E2"
+                                 Padding="10,0" />
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="2"
+                                Grid.Column="0"
+                                Margin="0 10 0 0">
+                        <TextBlock Text="Credit"
+                                   FontWeight="Bold"
+                                   FontSize="18"
+                                   Margin="0 0 0 5" />
+                        <TextBox Height="50"
+                                 FontSize="16"
+                                 Background="#E2E2E2"
+                                 Padding="10,0" />
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="3"
+                                Grid.Column="0"
+                                Margin="0 10 0 0">
+                        <TextBlock Text="Teacher of the Course"
+                                   FontWeight="Bold"
+                                   FontSize="18"
+                                   Margin="0 0 0 5" />
+                        <TextBox Height="50"
+                                 FontSize="16"
+                                 Background="#E2E2E2"
+                                 Padding="10,0" />
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="4"
+                                Grid.Column="0"
+                                Margin="0 10 0 0">
+                        <TextBlock Text="Email"
+                                   FontWeight="Bold"
+                                   FontSize="18"
+                                   Margin="0 0 0 5" />
+                        <TextBox Height="50"
+                                 FontSize="16"
+                                 Background="#E2E2E2"
+                                 Padding="10,0" />
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="5"
+                                Grid.Column="0"
+                                Margin="0 10 0 0">
+                        <TextBlock Text="Login Number"
+                                   FontWeight="Bold"
+                                   FontSize="18"
+                                   Margin="0 0 0 5" />
+                        <TextBox Height="50"
+                                 FontSize="16"
+                                 Background="#E2E2E2"
+                                 Padding="10,0" />
+                    </StackPanel>
+
+                    <!-- Sağ Sütun -->
+                    <StackPanel Grid.Row="0"
+                                Grid.Column="2"
+                                Margin="0 10 0 0" />
+
+                    <StackPanel Grid.Row="1"
+                                Grid.Column="2"
+                                Margin="0 10 0 0" />
+                </Grid>
+
+                <!-- Kaydet Butonu -->
+                <StackPanel Grid.Row="2"
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Right"
+                            Margin="0 30 0 0">
+                    <Button Content="SAVE"
+                            Width="200"
+                            Height="60"
+                            Background="#0C1D4F"
+                            Foreground="White"
+                            FontSize="20"
+                            FontWeight="Bold"
+                            BorderThickness="0"
+                            Cursor="Hand"
+                            Command="{Binding SaveCommand}" />
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

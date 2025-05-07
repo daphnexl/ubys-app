@@ -154,8 +154,6 @@
                               Height="30"
                               Style="{StaticResource ToggleButtonStyle}"
                               IsChecked="{Binding IsTextBoxVisible, Mode=TwoWay}" />
-
-
                 <!-- Toggle Show/Hide Password -->
             </StackPanel>
 

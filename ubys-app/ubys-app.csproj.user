@@ -19,6 +19,12 @@
     <Compile Update="Components\NavigationTeacherBar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MVVM\View\AddAdminView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MVVM\View\AddCourseView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MVVM\View\AddStudentView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -26,6 +32,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MVVM\View\AdminMainPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MVVM\View\CourseSelectionStatus.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MVVM\View\LoginPageView.xaml.cs">
@@ -57,6 +66,12 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="MVVM\View\AddAdminView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\AddCourseView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MVVM\View\AddStudentView.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -64,6 +79,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\AdminMainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\CourseSelectionStatus.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\LoginPageView.xaml">
