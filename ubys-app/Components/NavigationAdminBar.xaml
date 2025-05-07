@@ -1,12 +1,164 @@
 ﻿<UserControl x:Class="ubys_app.Components.NavigationAdminBar"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:ubys_app.Components"
-             mc:Ignorable="d" 
-             d:DesignHeight="1080" d:DesignWidth="1920">
+             mc:Ignorable="d"
+             d:DesignHeight="1080"
+             d:DesignWidth="1920"
+             Background="White">
+    <UserControl.Resources>
+        <Style TargetType="ColumnDefinition"
+               x:Key="SidebarColumnStyle">
+            <Setter Property="Width"
+                    Value="400" />
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsMenuCollapsed, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                             Value="True">
+                    <Setter Property="Width"
+                            Value="50" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+        <!-- Menüdeki butonların stili -->
+        <Style x:Key="MenuButtonStyle"
+               TargetType="Button">
+            <Setter Property="Background"
+                    Value="Transparent" />
+            <Setter Property="BorderThickness"
+                    Value="0" />
+            <Setter Property="HorizontalAlignment"
+                    Value="Left" />
+            <Setter Property="Height"
+                    Value="108" />
+            <Setter Property="Margin"
+                    Value="20,0" />
+            <Setter Property="Padding"
+                    Value="0" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <StackPanel Orientation="Horizontal"
+                                    VerticalAlignment="Center">
+                            <Image Width="32"
+                                   Height="32"
+                                   Source="{TemplateBinding Tag}" />
+                            <TextBlock Text="{TemplateBinding Content}"
+                                       FontSize="40"
+                                       FontWeight="Bold"
+                                       Margin="10,0"
+                                       VerticalAlignment="Center"
+                                       Visibility="Visible">
+                                <TextBlock.Style>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="Visibility"
+                                                Value="Visible" />
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding IsMenuCollapsed, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                         Value="True">
+                                                <Setter Property="Visibility"
+                                                        Value="Collapsed" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+                        </StackPanel>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
     <Grid>
-            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="SidebarColumn"
+                              Style="{StaticResource SidebarColumnStyle}" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Sidebar -->
+        <Grid Background="White"
+              Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!-- Hamburger Toggle Button (Bigger, Positioned on Right) -->
+            <Button Width="112"
+                    Height="143"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    Click="Hamburger_Click"
+                    Margin="0,10,10,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top">
+                <Canvas Width="40"
+                        Height="40">
+                    <Rectangle Width="40"
+                               Height="4"
+                               Fill="Black"
+                               Canvas.Top="0" />
+                    <Rectangle Width="40"
+                               Height="4"
+                               Fill="Black"
+                               Canvas.Top="12" />
+                    <Rectangle Width="40"
+                               Height="4"
+                               Fill="Black"
+                               Canvas.Top="24" />
+                </Canvas>
+            </Button>
+
+            <!-- Menu Buttons -->
+            <StackPanel Grid.Row="1"
+                        VerticalAlignment="Stretch"
+                        HorizontalAlignment="Left">
+                <Button Style="{StaticResource MenuButtonStyle}"
+                        Content="Home"
+                        Command="{Binding HomeCommand}"
+                        Tag="/Assets/home.png"
+                        Width="361"
+                        Height="104" />
+                <Button Style="{StaticResource MenuButtonStyle}"
+                        Content="Add Course"
+                        Command="{Binding AddCourseCommand}"
+                        Tag="/Assets/courses.png"
+                        Width="372"
+                        Height="119" />
+                <Button Style="{StaticResource MenuButtonStyle}"
+                        Content="Add Teacher"
+                        Command="{Binding AddTeacherCommand}"
+                        Tag="/Assets/edit.png"
+                        Height="125" />
+                <Button Style="{StaticResource MenuButtonStyle}"
+                        Content="Add Admin"
+                        Command="{Binding AddAdminCommand}"
+                        Tag="/Assets/students.png"
+                        Height="134" />
+                <Button Style="{StaticResource MenuButtonStyle}"
+                        Command="{Binding CSelectionStCommand}"
+                        Content="Course&#x0a;Selection&#x0a;Status"
+                        Tag="/Assets/students.png"
+                        Height="234"
+                        Click="Button_Click_1"
+                        Width="341">
+
+                </Button>
+
+                <Button Style="{StaticResource MenuButtonStyle}"
+                        Content="Log out"
+                        Command="{Binding LogOutCommand}"
+                        Tag="/Assets/logout.png"
+                        Width="370"
+                        Height="122" />
+            </StackPanel>
+        </Grid>
+
+        <!-- Main Content -->
+        <Grid Grid.Column="1"
+              Background="#321C63" />
     </Grid>
 </UserControl>

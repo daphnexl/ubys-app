@@ -32,7 +32,7 @@
                                FontWeight="Bold"
                                Foreground="#2B0A59"
                                HorizontalAlignment="Center" />
-                    <TextBlock Text="Yeni bir öğrenci eklemek için aşağıdaki formu doldurun"
+                    <TextBlock Text="!Fill out the form below to add a new student."
                                FontSize="18"
                                Foreground="Gray"
                                HorizontalAlignment="Center"
