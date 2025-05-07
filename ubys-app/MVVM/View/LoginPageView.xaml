@@ -155,7 +155,8 @@
                               Style="{StaticResource ToggleButtonStyle}"
                               Margin="30 0 10 0"
                               IsChecked="{Binding IsTextBoxVisible, Mode=TwoWay}"
-                              HorizontalAlignment="Right" />
+                              HorizontalAlignment="Right"
+                              RenderTransformOrigin="0.56,5.32" />
 
 
                 <!-- Toggle Show/Hide Password -->
