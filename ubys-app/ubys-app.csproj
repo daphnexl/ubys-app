@@ -10,7 +10,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Add 2Administrator.ico" />
+    <None Remove="Assets\Add Administrator.ico" />
     <None Remove="Assets\Add Male User Group.png" />
+    <None Remove="Assets\Add properties.png" />
+    <None Remove="Assets\Add User Male.ico" />
+    <None Remove="Assets\Cancel.ico" />
+    <None Remove="Assets\Classroom.ico" />
+    <None Remove="Assets\Course Assign.png" />
+    <None Remove="Assets\Grades.png" />
+    <None Remove="Assets\Home.png" />
+    <None Remove="Assets\Play.png" />
+    <None Remove="Assets\Schedule.ico" />
+    <None Remove="Assets\Students.png" />
+    <None Remove="Assets\Study.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,7 +35,20 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Add 2Administrator.ico" />
+    <Resource Include="Assets\Add Administrator.ico" />
     <Resource Include="Assets\Add Male User Group.png" />
+    <Resource Include="Assets\Add properties.png" />
+    <Resource Include="Assets\Add User Male.ico" />
+    <Resource Include="Assets\Cancel.ico" />
+    <Resource Include="Assets\Classroom.ico" />
+    <Resource Include="Assets\Course Assign.png" />
+    <Resource Include="Assets\Grades.png" />
+    <Resource Include="Assets\Home.png" />
+    <Resource Include="Assets\Play.png" />
+    <Resource Include="Assets\Schedule.ico" />
+    <Resource Include="Assets\Students.png" />
+    <Resource Include="Assets\Study.ico" />
   </ItemGroup>
 
 </Project>

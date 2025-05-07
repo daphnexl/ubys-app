@@ -24,5 +24,10 @@ namespace ubys_app.Components
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

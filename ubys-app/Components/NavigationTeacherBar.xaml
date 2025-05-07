@@ -1,11 +1,12 @@
 ﻿<UserControl x:Class="ubys_app.Components.NavigationTeacherBar"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:ubys_app.Components"
-             mc:Ignorable="d" 
-             d:DesignHeight="1080" d:DesignWidth="1920"
+             mc:Ignorable="d"
+             d:DesignHeight="1080"
+             d:DesignWidth="1920"
              Background="White">
     <UserControl.Resources>
         <Style TargetType="ColumnDefinition"
@@ -148,6 +149,21 @@
 
         <!-- Main Content -->
         <Grid Grid.Column="1"
-              Background="#321C63" />
+              Background="#321C63">
+            <Image Margin="-388,206,1858,824"
+                   Source="/Assets/Home.png"
+                   Stretch="Fill"
+                   RenderTransformOrigin="-3.786,0.43" />
+            <Image Margin="-388,348,1844,668"
+                   Source="/Assets/Classroom.ico"
+                   Stretch="Fill"
+                   RenderTransformOrigin="-13.516,-0.912" />
+            <Image Margin="-381,554,1851,476"
+                   Source="/Assets/Grades.png"
+                   Stretch="Fill" />
+            <Image Margin="214,772,1256,258"
+                   Source="/Assets/Students.png"
+                   Stretch="Fill" />
+        </Grid>
     </Grid>
 </UserControl>
