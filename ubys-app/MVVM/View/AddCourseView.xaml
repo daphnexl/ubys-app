@@ -62,7 +62,8 @@
                         <TextBlock Text="Course Name"
                                    FontWeight="Bold"
                                    FontSize="18"
-                                   Margin="0 0 0 5" />
+                                   Margin="0 0 0 5" 
+                                   VerticalAlignment="Center"/>
                         <TextBox Height="50"
                                  FontSize="16"
                                  Background="#E2E2E2"
