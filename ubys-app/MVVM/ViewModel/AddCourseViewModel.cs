@@ -7,7 +7,7 @@ using System.Windows.Controls;
 
 namespace ubys_app.MVVM.ViewModel
 {
-  public  class AddCourseViewModel :UserControl
+  public  class AddCourseViewModel :ViewModelBase
     {
     }
 }

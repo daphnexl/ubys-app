@@ -7,7 +7,7 @@ using System.Windows.Controls;
 
 namespace ubys_app.MVVM.ViewModel
 {
-   public class AddAdminViewModel : UserControl 
+   public class AddAdminViewModel : ViewModelBase 
     {
     }
 }
