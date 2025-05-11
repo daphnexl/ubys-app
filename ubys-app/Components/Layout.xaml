@@ -7,6 +7,17 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Sol Navigasyon -->
+        <ContentControl Grid.Column="0"
+                        Content="{Binding NavigationBarViewModel}" />
+
+        <!-- Sağ İçerik -->
+        <ContentControl Grid.Column="1"
+                        Content="{Binding CurrentPageViewModel}" />
     </Grid>
 </UserControl>

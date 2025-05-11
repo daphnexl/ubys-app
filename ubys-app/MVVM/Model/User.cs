@@ -26,9 +26,7 @@ namespace ubys_app.MVVM.Model
         public string? Email { get; set; }
         public string? Phone { get; set; }
 
-        [Required]
-        [ForeignKey(nameof(Role))]
-        public int Role { get; set; }
+       
 
         [Required]
 
@@ -39,8 +37,14 @@ namespace ubys_app.MVVM.Model
 
         [Required]
         public Gender Gender { get; set; }
-        public Role RoleNavigation { get; set; }
+        public Role Role { get; set; }
 
+    }
+    public enum Role
+    {
+        Student = 0,
+        Teacher = 1,
+        Admin = 2
     }
     public enum Gender
     {
