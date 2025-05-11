@@ -147,7 +147,5 @@
         </Grid>
 
         <!-- Main Content -->
-        <Grid Grid.Column="1"
-              Background="#321C63" />
     </Grid>
 </UserControl>

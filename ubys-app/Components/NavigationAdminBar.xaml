@@ -71,6 +71,10 @@
     </UserControl.Resources>
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="916*" />
+            <RowDefinition Height="75*" />
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition x:Name="SidebarColumn"
                               Style="{StaticResource SidebarColumnStyle}" />
@@ -79,7 +83,8 @@
 
         <!-- Sidebar -->
         <Grid Background="White"
-              Grid.Column="0">
+              Grid.Column="0"
+              Grid.RowSpan="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
@@ -158,6 +163,7 @@
 
         <!-- Main Content -->
         <Grid Grid.Column="1"
-              Background="#321C63" />
+              Background="#321C63"
+              Grid.RowSpan="2" />
     </Grid>
 </UserControl>

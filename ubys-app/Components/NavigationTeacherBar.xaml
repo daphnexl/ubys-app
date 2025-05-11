@@ -161,7 +161,7 @@
             <Image Margin="-381,554,1851,476"
                    Source="/Assets/Grades.png"
                    Stretch="Fill" />
-            <Image Margin="214,772,1256,258"
+            <Image Margin="-381,780,1851,250"
                    Source="/Assets/Students.png"
                    Stretch="Fill" />
         </Grid>
