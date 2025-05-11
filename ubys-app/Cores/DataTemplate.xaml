@@ -5,5 +5,18 @@
     <DataTemplate DataType="{x:Type vm:LoginPageViewModel}">
         <view:LoginPageView />
     </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddStudentViewModel}">
+        <view:AddStudentView />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddTeacherViewModel}">
+        <view:AddTeacherView />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddAdminViewModel}">
+        <view:AddAdminView />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:AddCourseViewModel}">
+        <view:AddCourseView />
+    </DataTemplate>
+
 
 </ResourceDictionary>

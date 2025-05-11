@@ -6,6 +6,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 
+                
                 <ResourceDictionary Source="Cores/DataTemplate.xaml" /> 
                 <ResourceDictionary Source="Assets/" />
                 <ResourceDictionary Source="Styles/TextBox.xaml" />
