@@ -17,7 +17,6 @@ namespace ubys_app.Data
         public DbSet<Course> Courses { get; set; }
         public DbSet<Enrollment> Enrollments { get; set; }
         public DbSet<Grade> Grades { get; set; }
-        public DbSet<Role> Roles { get; set; }
         public DbSet<Semester> Semesters { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
