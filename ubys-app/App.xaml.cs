@@ -7,6 +7,7 @@ using System.IO;
 using System.Windows;
 using ubys_app.MVVM.ViewModel;
 using ubys_app.Services;
+using ubys_app.Stores;
 
 namespace ubys_app
 {
@@ -19,7 +20,17 @@ namespace ubys_app
         public App()
         {
             IServiceCollection services = new ServiceCollection();
+
+
+            services.AddSingleton<AdminBarStore>();
+            services.AddSingleton<StudentBarStore>();
+            services.AddSingleton<TeacherBarStore>();
+            services.AddSingleton<ModalNavigationStore>();
+            services.AddSingleton<NavigationStore>();
+
             string dbPath = Path.Combine(Directory.GetCurrentDirectory(), "ubysDatabase.db3");
+
+
             services.AddDbContext<AppDbContext>(options => options.UseSqlite($"Data source={dbPath}"));
             services.AddScoped<StudentService>();
             services.AddScoped<TeacherService>();

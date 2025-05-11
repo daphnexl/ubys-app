@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ubys_app.Stores
 {
-    internal class TeacherStore
+    public class StudentBarStore
     {
     }
 }

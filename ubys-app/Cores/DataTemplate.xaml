@@ -1,6 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:vm="clr-namespace:ubys_app.MVVM.ViewModels"
+                    xmlns:vm="clr-namespace:ubys_app.MVVM.ViewModel"
                     xmlns:view="clr-namespace:ubys_app.MVVM.View">
     <DataTemplate DataType="{x:Type vm:LoginPageViewModel}">
         <view:LoginPageView />

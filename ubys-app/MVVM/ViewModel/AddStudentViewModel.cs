@@ -3,7 +3,7 @@ using System.Windows.Input;
 
 namespace ubys_app.MVVM.ViewModel
 {
-    public class AddStudentViewModel
+    public class AddStudentViewModel : ViewModelBase
     {
         public ICommand SaveCommand { get; }
 
