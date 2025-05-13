@@ -16,14 +16,13 @@ using System.Windows.Shapes;
 namespace ubys_app.Components
 {
     /// <summary>
-    /// NavigationAdminBar.xaml etkileşim mantığı
+    /// Interaction logic for AdminLayout.xaml
     /// </summary>
-    public partial class NavigationAdminBar : UserControl
+    public partial class AdminLayout : UserControl
     {
-        public NavigationAdminBar()
+        public AdminLayout()
         {
             InitializeComponent();
         }
-
     }
 }

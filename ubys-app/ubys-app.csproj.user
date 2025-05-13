@@ -7,7 +7,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Components\Layout.xaml.cs">
+    <Compile Update="Components\AdminLayout.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Components\NavigationAdminBar.xaml.cs">
@@ -17,6 +17,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Components\NavigationTeacherBar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\StudentLayout.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\TeacherLayout.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MVVM\View\AddAdminView.xaml.cs">
@@ -48,7 +54,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Components\Layout.xaml">
+    <Page Update="Components\AdminLayout.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\NavigationAdminBar.xaml">
@@ -58,6 +64,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Components\NavigationTeacherBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\StudentLayout.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\TeacherLayout.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Cores\DataTemplate.xaml">
