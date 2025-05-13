@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ubys_app.MVVM.ViewModel
 {
-    internal class AddTeacherViewModel
+    public class AddTeacherViewModel
     {
     }
 }

@@ -134,10 +134,6 @@
                     <TextBlock Text="Log out" />
                 </StackPanel>
             </StackPanel>
-            <Image Margin="65,699,65,82"
-                   Grid.Row="1"
-                   Source="/Assets/Add Male User Group.png"
-                   Stretch="Fill" />
         </Grid>
 
         <!-- Main Content -->

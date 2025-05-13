@@ -2,9 +2,9 @@
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace ubys_app.MVVM.ViewModels
+namespace ubys_app.MVVM.ViewModel
 {
-    public partial class LoginPageViewModel : UserControl
+    public  class LoginPageViewModel : UserControl
     {
       
     }

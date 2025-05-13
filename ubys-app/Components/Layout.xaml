@@ -11,6 +11,19 @@
             <ColumnDefinition Width="200" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+        <local:NavigationAdminBar Grid.ColumnSpan="2"
+                             Visibility="{Binding IsNavigationBarVisible, Converter={StaticResource BooleanToVisibility}}"
+                             DataContext="{Binding AdminNavigationBarVM}"
+                             Panel.ZIndex="1" />
+        <local:NavigationStudentBar Grid.ColumnSpan="2"
+                                  Visibility="{Binding IsNavigationBarVisible, Converter={StaticResource BooleanToVisibility}}"
+                                  DataContext="{Binding NavigationStudentBarViewModel}"
+                                  Panel.ZIndex="1" />
+        <local:NavigationTeacherBar Grid.ColumnSpan="2"
+                                  Visibility="{Binding IsNavigationBarVisible, Converter={StaticResource BooleanToVisibility}}"
+                                  DataContext="{Binding NavigationTeacherBarViewModel}"
+                                  Panel.ZIndex="1" />
+
 
         <!-- Sol Navigasyon -->
         <ContentControl Grid.Column="0"
