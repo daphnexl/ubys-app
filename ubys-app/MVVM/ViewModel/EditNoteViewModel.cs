@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ubys_app.MVVM.ViewModel
 {
-    public class AddTeacherViewModel :ViewModelBase
+   public class EditNoteViewModel : ViewModelBase
     {
     }
 }

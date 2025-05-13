@@ -4,9 +4,22 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ubys_app.Components"
-             mc:Ignorable="d" 
+             mc:Ignorable="d"
+             xmlns:vm="clr-namespace:ubys_app.MVVM.ViewModel"
+             d:DataContext="{d:DesignInstance Type=vm:TeacherLayoutVM}"
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+
+        <local:NavigationTeacherBar Grid.Column="0"
+                                    Visibility="{Binding IsNavigationBarVisible, Converter={StaticResource BooleanToVisibility}"
+                                    DataContext="{Binding NavigationBarTeacherViewModel}" />
+        
+        <ContentControl Grid.Column="1"
+                        Content="{Binding CurrentPageViewModel}" />
     </Grid>
 </UserControl>

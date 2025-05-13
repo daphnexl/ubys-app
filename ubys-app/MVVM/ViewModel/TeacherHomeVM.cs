@@ -7,11 +7,11 @@ using ubys_app.Services;
 
 namespace ubys_app.MVVM.ViewModel
 {
-   public class StudentHomeViewModel :ViewModelBase
+     public class TeacherHomeVM :ViewModelBase
     {
         private readonly INavigationService _navigationService;
 
-        public StudentHomeViewModel(INavigationService navigationService)
+        public TeacherHomeVM(INavigationService navigationService)
         {
             _navigationService = navigationService;
         }

@@ -6,6 +6,8 @@
              xmlns:local="clr-namespace:ubys_app.Components"
              mc:Ignorable="d"
              xmlns:vm="clr-namespace:ubys_app.MVVM.ViewModel"
+             d:DataContext="{d:DesignInstance Type=vm:NavigationTeacherBarViewModel}"
+     
           
              d:DesignHeight="1080"
              d:DesignWidth="1920"

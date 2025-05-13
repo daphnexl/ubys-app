@@ -4,7 +4,7 @@ using System.Windows.Input;
 
 namespace ubys_app.MVVM.ViewModel
 {
-    public  class LoginPageViewModel : UserControl
+    public  class LoginPageViewModel : ViewModelBase
     {
       
     }

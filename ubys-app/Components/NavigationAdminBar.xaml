@@ -5,12 +5,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:vm="clr-namespace:ubys_app.MVVM.ViewModel"
              xmlns:view="clr-namespace:ubys_app.MVVM.View"
-    
-       
+             d:DataContext="{d:DesignInstance Type=vm:AdminNavigationBarVM}"
              xmlns:local="clr-namespace:ubys_app.Components">
 
     <UserControl.Resources>
-        <Style TargetType="ColumnDefinition"
+        <Style TargetType="ColumnDefinition" 
                x:Key="SidebarColumnStyle">
             <Setter Property="Width"
                     Value="400" />
