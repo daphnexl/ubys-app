@@ -16,7 +16,7 @@
 
 
         <local:NavigationTeacherBar Grid.Column="0"
-                                    Visibility="{Binding IsNavigationBarVisible, Converter={StaticResource BooleanToVisibility}"
+                                    Visibility="{Binding IsNavigationBarVisible, Converter={StaticResource BooleanToVisibility}}"
                                     DataContext="{Binding NavigationBarTeacherViewModel}" />
         
         <ContentControl Grid.Column="1"

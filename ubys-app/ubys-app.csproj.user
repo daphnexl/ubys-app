@@ -52,6 +52,9 @@
     <Compile Update="MVVM\View\TeacherMainPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MVVM\View\TeacherMyCourses.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Components\AdminLayout.xaml">
@@ -103,6 +106,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\TeacherMainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\TeacherMyCourses.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\Button.xaml">
