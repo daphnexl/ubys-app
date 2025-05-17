@@ -5,74 +5,63 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:ubys_app.MVVM.View"
              mc:Ignorable="d"
-             d:DesignHeight="1080"
-             d:DesignWidth="1920"
-             Background="#321C63">
+             d:DesignHeight="450"
+             d:DesignWidth="800">
+    <Grid Background="#2F0057"
+          Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
 
-    <Grid Margin="100"
-          MaxWidth="1900"
-          HorizontalAlignment="Center"
-          VerticalAlignment="Center">
-        <!-- Dikey ortalama eklendi -->
-        <StackPanel VerticalAlignment="Center">
-            <!-- Dikey ortalama eklendi -->
+        <!-- Üst Filtre Alanı -->
+        <Grid Grid.Row="0"
+              Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
-            <!-- Üst Filtre Alanı -->
-            <StackPanel Orientation="Horizontal"
-                        Margin="0,0,0,50"
-                        HorizontalAlignment="Center">
-                <Button Content="☰"
-                        Width="90"
-                        Height="90"
-                        Margin="0,0,30,0"
-                        Background="White" />
+            <ComboBox Grid.Column="0"
+                      Margin="5"
+                      SelectedIndex="0">
+                <ComboBoxItem Content="Courses Code" />
+            </ComboBox>
 
-                <ComboBox Width="400"
-                          Height="80"
-                          Margin="0,0,30,0"
-                          FontSize="30">
-                    <!-- Yazı büyütüldü -->
-                    <ComboBoxItem Content="Courses Code"
-                                  IsSelected="True"
-                                  FontSize="30" />
-                </ComboBox>
+            <ComboBox Grid.Column="1"
+                      Margin="5"
+                      SelectedIndex="0">
+                <ComboBoxItem Content="Course Name" />
+            </ComboBox>
 
-                <ComboBox Width="560"
-                          Height="80"
-                          Margin="0,0,30,0"
-                          FontSize="30">
-                    <!-- Yazı büyütüldü -->
-                    <ComboBoxItem Content="Course Name"
-                                  IsSelected="True"
-                                  FontSize="30" />
-                </ComboBox>
+            <ComboBox Grid.Column="2"
+                      Margin="5"
+                      SelectedIndex="0">
+                <ComboBoxItem Content="Courses Credits" />
+            </ComboBox>
+        </Grid>
 
-                <ComboBox Width="400"
-                          Height="80"
-                          FontSize="30">
-                    <!-- Yazı büyütüldü -->
-                    <ComboBoxItem Content="Courses Credits"
-                                  IsSelected="True"
-                                  FontSize="30" />
-                </ComboBox>
-            </StackPanel>
+        <!-- Ana İçerik -->
+        <Border Grid.Row="1"
+                Background="#3A3A3A"
+                CornerRadius="4"
+                Padding="10"
+                Margin="10">
+            <StackPanel>
+                <!-- Section Butonu -->
+                <Button Content="Section 1"
+                        HorizontalAlignment="Left"
+                        Margin="0,0,0,10"
+                        FontWeight="Bold"
+                        Padding="6,2"
+                        Background="#5A5A5A"
+                        Foreground="White"
+                        BorderBrush="Black"
+                        BorderThickness="1"
+                        Width="74" />
 
-            <!-- Section Etiketi -->
-            <Border Background="#402D73"
-                    Padding="18,12"
-                    CornerRadius="10"
-                    Margin="0,0,0,30"
-                    HorizontalAlignment="Left">
-                <TextBlock Text="Section 1"
-                           Foreground="White"
-                           FontWeight="SemiBold"
-                           FontSize="28" />
-            </Border>
-
-            <!-- Kurs Tablosu -->
-            <Border Background="#402D73"
-                    Padding="35"
-                    CornerRadius="16">
+                <!-- 4 satır ve 3 sütun içeren Grid -->
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -81,104 +70,100 @@
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="70" />
+                        <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
 
                     <!-- Satır 1 -->
-                    <TextBlock Text="1"
-                               Foreground="White"
-                               VerticalAlignment="Center"
-                               Grid.Row="0"
+                    <TextBlock Grid.Row="0"
                                Grid.Column="0"
-                               Margin="18"
-                               FontSize="24" />
+                               Text="1"
+                               VerticalAlignment="Center"
+                               Foreground="White"
+                               Margin="5" />
                     <TextBox Grid.Row="0"
                              Grid.Column="1"
-                             Margin="18"
-                             Background="#E0E0E0"
-                             FontSize="24"
-                             Height="70" />
-                    <!-- Yükseklik artırıldı -->
+                             Height="40"
+                             Background="#DDDDDD" />
                     <TextBox Grid.Row="0"
                              Grid.Column="2"
-                             Margin="18"
-                             Background="#E0E0E0"
-                             FontSize="24"
-                             Height="70" />
-                    <!-- Yükseklik artırıldı -->
+                             Height="40"
+                             Background="#DDDDDD" />
 
                     <!-- Satır 2 -->
-                    <TextBlock Text="2"
-                               Foreground="White"
-                               VerticalAlignment="Center"
-                               Grid.Row="1"
+                    <TextBlock Grid.Row="1"
                                Grid.Column="0"
-                               Margin="18"
-                               FontSize="24" />
+                               Text="2"
+                               VerticalAlignment="Center"
+                               Foreground="White"
+                               Margin="5" />
                     <TextBox Grid.Row="1"
                              Grid.Column="1"
-                             Margin="18"
-                             Background="#E0E0E0"
-                             FontSize="24"
-                             Height="70" />
-                    <!-- Yükseklik artırıldı -->
+                             Height="40"
+                             Background="#DDDDDD" />
                     <TextBox Grid.Row="1"
                              Grid.Column="2"
-                             Margin="18"
-                             Background="#E0E0E0"
-                             FontSize="24"
-                             Height="70" />
-                    <!-- Yükseklik artırıldı -->
+                             Height="40"
+                             Background="#DDDDDD" />
 
                     <!-- Satır 3 -->
-                    <TextBlock Text="3"
-                               Foreground="White"
-                               VerticalAlignment="Center"
-                               Grid.Row="2"
+                    <TextBlock Grid.Row="2"
                                Grid.Column="0"
-                               Margin="18"
-                               FontSize="24" />
+                               Text="3"
+                               VerticalAlignment="Center"
+                               Foreground="White"
+                               Margin="5" />
                     <TextBox Grid.Row="2"
                              Grid.Column="1"
-                             Margin="18"
-                             Background="#E0E0E0"
-                             FontSize="24"
-                             Height="70" />
-                    <!-- Yükseklik artırıldı -->
+                             Height="40"
+                             Background="#DDDDDD" />
                     <TextBox Grid.Row="2"
                              Grid.Column="2"
-                             Margin="18"
-                             Background="#E0E0E0"
-                             FontSize="24"
-                             Height="70" />
-                    <!-- Yükseklik artırıldı -->
+                             Height="40"
+                             Background="#DDDDDD" />
 
                     <!-- Satır 4 -->
-                    <TextBlock Text="4"
-                               Foreground="White"
-                               VerticalAlignment="Center"
-                               Grid.Row="3"
+                    <TextBlock Grid.Row="3"
                                Grid.Column="0"
-                               Margin="18"
-                               FontSize="24" />
+                               Text="4"
+                               VerticalAlignment="Center"
+                               Foreground="White"
+                               Margin="5" />
                     <TextBox Grid.Row="3"
                              Grid.Column="1"
-                             Margin="18"
-                             Background="#E0E0E0"
-                             FontSize="24"
-                             Height="70" />
-                    <!-- Yükseklik artırıldı -->
+                             Height="40"
+                             Background="#DDDDDD" />
                     <TextBox Grid.Row="3"
                              Grid.Column="2"
-                             Margin="18"
-                             Background="#E0E0E0"
-                             FontSize="24"
-                             Height="70" />
-                    <!-- Yükseklik artırıldı -->
+                             Height="40"
+                             Background="#DDDDDD" />
+                    <TextBox Grid.Row="0"
+                             Grid.Column="1"
+                             Height="40"
+                             Background="#DDDDDD" />
+                    <TextBox Grid.Row="0"
+                             Height="40"
+                             Background="#DDDDDD"
+                             Grid.ColumnSpan="2"
+                             Margin="19,0,246,0" />
+                    <TextBox Grid.Row="1"
+                             Height="40"
+                             Background="#DDDDDD"
+                             Grid.ColumnSpan="2"
+                             Margin="19,0,246,0" />
+                    <TextBox Grid.Row="2"
+                             Height="40"
+                             Background="#DDDDDD"
+                             Grid.ColumnSpan="2"
+                             Margin="19,0,246,0" />
+                    <TextBox Grid.Row="3"
+                             Height="40"
+                             Background="#DDDDDD"
+                             Grid.ColumnSpan="2"
+                             Margin="19,0,246,0" />
                 </Grid>
-            </Border>
-        </StackPanel>
+            </StackPanel>
+        </Border>
     </Grid>
 </UserControl>
